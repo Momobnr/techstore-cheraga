@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Chéraga - Électronique & High-Tech</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --accent-color: #ff6600;
+            --bg-light: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0056b3, #002d62);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 { margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        /* Promos Banner */
+        .promo-banner {
+            background-color: #fff3cd;
+            border-left: 5px solid var(--accent-color);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+        /* Products Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            padding: 0.6rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">⚡ TechStore Chéraga</div>
+            <nav class="nav-links">
+                <a href="#offres">Offres Spéciales</a>
+                <a href="#produits">Produits</a>
+                <a href="#contact">Contact & Accès</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Le meilleur de la technologie à Chéraga</h1>
+        <p>Smartphones, TV, Laptops & Électroménager avec garantie et livraison rapide</p>
+    </section>
+
+    <div class="container">
+        <div id="offres" class="promo-banner">
+            <h3>🔥 Offre du moment : Promo Rentrée / Ramadan</h3>
+            <p>Remise de 10% sur tous les PC portables + une souris sans fil offerte !</p>
+        </div>
+
+        <h2 id="produits" class="section-title">Nos Produits Disponibles</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="TV Samsung">
+                <div class="card-body">
+                    <h3 class="card-title">TV Samsung 55" 4K Smart</h3>
+                    <div class="price">105 000 DA</div>
+                    <a href="https://wa.me/213XXXXXXXXX?text=Bonjour,%20je%20suis%20intéressé%20par%20la%20TV%20Samsung" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Smartphone">
+                <div class="card-body">
+                    <h3 class="card-title">Smartphone Redmi Note 13</h3>
+                    <div class="price">38 500 DA</div>
+                    <a href="https://wa.me/213XXXXXXXXX?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20Redmi%20Note%2013" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="PC Portable">
+                <div class="card-body">
+                    <h3 class="card-title">PC Portable Lenovo Core i5</h3>
+                    <div class="price">89 000 DA</div>
+                    <a href="https://wa.me/213XXXXXXXXX?text=Bonjour,%20je%20suis%20intéressé%20par%20le%20PC%20Lenovo" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>📍 <strong>Adresse :</strong> Rue Alioua Fodil, Chéraga, Alger</p>
+        <p>📞 <strong>Téléphone :</strong> 0550 XX XX XX | 💬 <strong>WhatsApp :</strong> 0770 XX XX XX</p>
+        <p>&copy; 2026 TechStore Chéraga - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
